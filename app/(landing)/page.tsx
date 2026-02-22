@@ -34,7 +34,7 @@ export default function HomePage() {
                         <span className="text-blue-500 font-medium">UC San Diego</span>
                     </p>
                     <p className="text-sm text-gray-400 mb-8">
-                        UCSD DSC Capstone — 99P Labs / HRI &amp; HDSI
+                        UCSD DSC Capstone - 99P Labs / Honda Research Institute &amp; HDSI
                     </p>
 
                     {/* Resource Buttons */}
@@ -62,7 +62,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== ABSTRACT ===== */}
-            <section id="abstract" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="abstract" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Abstract</h2>
                     <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed space-y-4 text-justify">
@@ -116,7 +116,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== RELATED WORKS ===== */}
-            <section id="related-works" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="related-works" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Related Works</h2>
 
@@ -198,7 +198,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== RESULTS ===== */}
-            <section id="results" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="results" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Results</h2>
 
@@ -272,7 +272,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== CONCLUSION ===== */}
-            <section id="conclusion" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="conclusion" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Conclusion</h2>
 
@@ -316,7 +316,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== BIBTEX CITATION ===== */}
-            <section id="citation" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="citation" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">📌 BibTeX Citation</h2>
                     <p className="text-gray-600 text-center mb-6">
