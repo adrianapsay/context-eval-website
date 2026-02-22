@@ -10,7 +10,7 @@ export default function HomePage() {
             <section className="bg-white dark:bg-gray-950 py-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-tight">
-                        ContextEval: Evaluating LLM Agent Context Policies for ML Experiment Design
+                        <span className="text-red-600">ContextEval</span>: Evaluating LLM Agent Context Policies for ML Experiment Design
                     </h1>
 
                     {/* Authors */}
@@ -25,13 +25,13 @@ export default function HomePage() {
                     </div>
 
                     {/* Mentors */}
-                    <p className="text-base text-gray-500 mb-1">
-                        Mentors: <span className="text-gray-700">Ryan Lingo</span>, <span className="text-gray-700">Rajeev Chhajer</span>
+                    <p className="text-base text-gray-500 dark:text-gray-400 mb-1">
+                        Mentors: <span className="text-gray-700 dark:text-gray-200">Ryan Lingo</span>, <span className="text-gray-700 dark:text-gray-200">Rajeev Chhajer</span>
                     </p>
 
                     {/* Affiliation */}
-                    <p className="text-base text-gray-500 mb-2">
-                        UC San Diego
+                    <p className="text-base mb-2">
+                        <span className="text-blue-500 font-medium">UC San Diego</span>
                     </p>
                     <p className="text-sm text-gray-400 mb-8">
                         UCSD DSC Capstone — 99P Labs / HRI &amp; HDSI
@@ -62,7 +62,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== ABSTRACT ===== */}
-            <section id="abstract" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="abstract" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Abstract</h2>
                     <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed space-y-4 text-justify">
@@ -72,7 +72,7 @@ export default function HomePage() {
                             the agent retains, retrieves, and reasons over across turns—affect performance remains poorly understood.
                         </p>
                         <p>
-                            We introduce <strong className="text-gray-900">ContextEval</strong>, an evaluation framework that
+                            We introduce <strong className="text-gray-900 dark:text-white">ContextEval</strong>, an evaluation framework that
                             systematically varies context policies along key axes (e.g., history depth, retrieval scope, summarization
                             strategy) and measures their impact on ML experiment outcomes including model accuracy, cost-efficiency,
                             and experimental stability.
@@ -116,7 +116,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== RELATED WORKS ===== */}
-            <section id="related-works" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="related-works" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Related Works</h2>
 
@@ -198,7 +198,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== RESULTS ===== */}
-            <section id="results" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="results" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Results</h2>
 
@@ -272,7 +272,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== CONCLUSION ===== */}
-            <section id="conclusion" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="conclusion" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">Conclusion</h2>
 
@@ -316,7 +316,7 @@ export default function HomePage() {
             </section>
 
             {/* ===== BIBTEX CITATION ===== */}
-            <section id="citation" className="bg-gray-50 dark:bg-gray-900 py-16 scroll-mt-16">
+            <section id="citation" className="bg-gray-100 dark:bg-gray-900 py-16 scroll-mt-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">📌 BibTeX Citation</h2>
                     <p className="text-gray-600 text-center mb-6">
