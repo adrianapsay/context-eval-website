@@ -68,8 +68,8 @@ export default function HomePage() {
                     <div className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed space-y-4 text-justify">
                         <p>
                             Large Language Model (LLM) agents are increasingly used to automate iterative machine learning (ML)
-                            experimentation, yet how <em className="text-gray-800 dark:text-gray-200">context policy</em> design choices—what information
-                            the agent retains, retrieves, and reasons over across turns—affect performance remains poorly understood.
+                            experimentation, yet how <em className="text-gray-800 dark:text-gray-200">context policy</em> design choices (i.e., what information
+                            the agent retains, retrieves, and reasons over across turns) affect performance remains poorly understood.
                         </p>
                         <p>
                             We introduce <strong className="text-gray-900 dark:text-white">ContextEval</strong>, an evaluation framework that
