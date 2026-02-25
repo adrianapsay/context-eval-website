@@ -29,8 +29,25 @@ export default function LandingLayout({
 
             {/* Footer */}
             <footer className="border-t border-gray-200 dark:border-gray-800 py-6">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
-                    ContextEval — UCSD DSC Capstone
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400 space-y-1">
+                    <p>ContextEval — UCSD DSC Capstone</p>
+                    <p>
+                        This page was inspired by the{' '}
+                        <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                            Academic Project Page Template
+                        </a>
+                        {' '}which was adopted from the{' '}
+                        <a href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                            Nerfies
+                        </a>
+                        {' '}project page.
+                    </p>
+                    <p>
+                        This website is licensed under a{' '}
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
+                            Creative Commons Attribution-ShareAlike 4.0 International License
+                        </a>.
+                    </p>
                 </div>
             </footer>
         </div>
