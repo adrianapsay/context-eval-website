@@ -30,11 +30,8 @@ export default function HomePage() {
                     </p>
 
                     {/* Affiliation */}
-                    <p className="text-sm md:text-base mb-2">
-                        <span className="text-blue-500 font-medium">UC San Diego</span>
-                    </p>
-                    <p className="text-[13px] md:text-sm text-gray-400 mb-8 max-w-sm mx-auto">
-                        UCSD DSC Capstone - 99P Labs / Honda Research Institute &amp; HDSI
+                    <p className="text-sm md:text-base mb-8">
+                        <span className="text-blue-500 font-medium">UC San Diego</span> &amp; <span className="text-red-500 font-medium">99P Labs / Honda Research Institute</span>
                     </p>
 
                     {/* Resource Buttons */}
@@ -149,7 +146,7 @@ export default function HomePage() {
                         <div>
                             <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Stratified Initialization</h3>
                             <p>
-                                To study how initialization quality interacts with context visibility, we evaluate a pool of 256 configurations using Sobol quasi-random sampling. We then partition configurations into three performance strata: <strong>Good</strong>, <strong>Neutral</strong>, and <strong>Bad</strong>. This ensures our evaluation covers the entire difficulty distribution of the search space.
+                                To study how initialization quality interacts with context visibility, we evaluate a pool of 256 configurations using Sobol quasi-random sampling. We then partition configurations into three performance strata: <strong>High</strong>, <strong>Neutral</strong>, and <strong>Low</strong>. This ensures our evaluation covers the entire difficulty distribution of the search space.
                             </p>
                         </div>
                     </div>
@@ -170,14 +167,16 @@ export default function HomePage() {
                             1. LLMs Act as Corrective Heuristics
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-6 text-left md:text-justify">
-                            Optimization trajectories are heavily initialization-dependent. LLM agents rapidly escape poor configurations but provide diminishing returns near strong start points. Rather than acting as deep structural searchers, they behave mostly as corrective heuristics.
+                            Optimization trajectories are heavily initialization-dependent. LLM agents rapidly escape poor configurations but provide diminishing returns near strong start points. Rather than acting as deep structural searchers, they behave mostly as corrective heuristics that do not consistently outperform random search.
                         </p>
-                        {/* Image Placeholder */}
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-xl aspect-square md:aspect-video flex items-center justify-center border border-gray-200 dark:border-gray-700">
-                            <span className="text-gray-400 font-medium whitespace-pre-wrap text-center px-4">
-                                [Insert Reduction in Regret Plot Here]{'\n'}
-                                <span className="text-sm mb-2 block">(e.g., figure/fig4_delta_regret_by_init.png)</span>
-                            </span>
+                        {/* Image Grid */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-6">
+                            <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-50 flex items-center justify-center p-2 md:p-4">
+                                <img src="/context-eval-website/figures/fig4_delta_regret_by_init.png" alt="Reduction in Regret by Initialization" className="w-full h-auto object-contain rounded-lg" />
+                            </div>
+                            <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-50 flex items-center justify-center p-2 md:p-4">
+                                <img src="/context-eval-website/figures/fig2_llm_vs_random.png" alt="LLM vs. Random Search Baselines" className="w-full h-auto object-contain rounded-lg" />
+                            </div>
                         </div>
                     </div>
 
@@ -189,6 +188,10 @@ export default function HomePage() {
                         <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-6 text-left md:text-justify">
                             Exposing explicit parameter bounds to the agent reliably eliminates constraint violations ("objective-scale hallucinations"). However, this structural compliance does not translate into improved final objective scores, highlighting a stark separation between feasibility restrictions and optimization capability.
                         </p>
+                        {/* Image Placeholder */}
+                        <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-50 flex items-center justify-center p-2 md:p-4">
+                            <img src="/context-eval-website/figures/fig6_axis_effects.png" alt="Effect of Context Axes" className="w-full h-auto object-contain rounded-lg" />
+                        </div>
                     </div>
 
                     {/* Finding 3 */}
@@ -200,11 +203,8 @@ export default function HomePage() {
                             Dense semantic task metadata introduces significant trajectory instability. When evaluating Kaggle tasks with lengthy descriptions, structural JSON instructions get "buried." This causes the LLM's attention mechanism to degrade, resulting in repeated parsing failures (Context Rot). Furthermore, deeper historical feedback frequently traps the agent in non-convergent oscillation when initialized from a poor state.
                         </p>
                         {/* Image Placeholder */}
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-xl aspect-square md:aspect-video flex items-center justify-center border border-gray-200 dark:border-gray-700 px-4 text-center">
-                            <span className="text-gray-400 font-medium whitespace-pre-wrap">
-                                [Insert Trajectory Examples Plot Here]{'\n'}
-                                <span className="text-sm mb-2 block">(e.g., figure/fig10_trajectory_examples.png)</span>
-                            </span>
+                        <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-50 flex items-center justify-center p-2 md:p-4">
+                            <img src="/context-eval-website/figures/fig10_trajectory_examples.png" alt="Optimization Trajectory Examples" className="w-full h-auto object-contain rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@ export default function HomePage() {
                     <div className="w-16 h-1 bg-red-500 mx-auto mb-8 rounded"></div>
                     <div className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed space-y-4 text-left md:text-justify">
                         <p>
-                            ContextEval demonstrates that an LLM's capacity to optimize machine learning experiments is deeply intertwined with the structure of the information it receives. While LLMs are effective debuggers, their limitations in maintaining stability under complex semantic noise suggest they currently operate best as corrective heuristics rather than autonomous black-box optimizers.
+                            ContextEval demonstrates that an LLM's capacity to optimize machine learning experiments is deeply intertwined with the structure of the information it receives. While LLMs are effective debuggers, their limitations in maintaining stability under complex semantic noise suggest they currently operate best as corrective heuristics that do not consistently outperform random search, rather than autonomous black-box optimizers.
                         </p>
                         <p>
                             We argue that future evaluations of agentic frameworks must treat context visibility as a rigorously controlled experimental variable to accurately measure genuine reasoning capabilities versus prompt-based structural advantages.
