@@ -6,10 +6,8 @@ import { ChevronDown } from 'lucide-react';
 const sections = [
     { label: 'Abstract', id: 'abstract' },
     { label: 'Introduction', id: 'introduction' },
-    { label: 'Related Works', id: 'related-works' },
     { label: 'Methodology', id: 'methodology' },
-    { label: 'Results', id: 'results' },
-    { label: 'Analysis & Discussion', id: 'analysis' },
+    { label: 'Key Findings', id: 'findings' },
     { label: 'Conclusion', id: 'conclusion' },
     { label: 'Code & Resources', id: 'code-resources' },
     { label: 'Citation', id: 'citation' },
