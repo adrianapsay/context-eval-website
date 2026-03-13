@@ -100,11 +100,8 @@ export default function HomePage() {
                         <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8 text-center max-w-3xl mx-auto">
                             To ensure behavioral effects trace solely to context exposure, ContextEval enforces a strict programmatic boundary: an execution Trace Layer logs the full environment state, while a policy-gated Context Layer filters the agent's observation space.
                         </p>
-                        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl aspect-square sm:aspect-video md:aspect-[16/7] flex items-center justify-center border border-gray-200 dark:border-gray-700 shadow-sm relative overflow-hidden">
-                            <span className="text-gray-400 font-medium whitespace-pre-wrap text-center px-4 relative z-10">
-                                [Insert System Architecture Diagram Here]{'\n'}
-                                <span className="text-sm">(e.g., Figure 1. ContextEval System Architecture)</span>
-                            </span>
+                        <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm bg-white dark:bg-gray-50 flex items-center justify-center p-2 md:p-4">
+                            <img src="/context-eval-website/figures/motivation.png" alt="ContextEval System Architecture" className="w-full h-auto object-contain rounded-lg" />
                         </div>
                     </div>
                 </div>
