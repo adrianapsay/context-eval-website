@@ -36,7 +36,7 @@ export default function HomePage() {
 
                     {/* Resource Buttons */}
                     <div className="flex flex-wrap justify-center gap-3">
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link href="/context-eval-website/project-artifacts/paper.pdf" target="_blank" rel="noopener noreferrer">
                             <Button className="rounded-full bg-gray-900 text-white hover:bg-gray-800 px-5 py-2 text-sm gap-2">
                                 <FileText className="w-4 h-4" />
                                 Paper
@@ -48,7 +48,7 @@ export default function HomePage() {
                                 Github
                             </Button>
                         </Link>
-                        <Link href="#" target="_blank" rel="noopener noreferrer">
+                        <Link href="/context-eval-website/project-artifacts/poster.pdf" target="_blank" rel="noopener noreferrer">
                             <Button className="rounded-full bg-gray-900 text-white hover:bg-gray-800 px-5 py-2 text-sm gap-2">
                                 <BookOpen className="w-4 h-4" />
                                 Poster
